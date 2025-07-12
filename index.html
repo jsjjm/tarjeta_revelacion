@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Girl or Boy - Revelación de Sexo</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap');
-        
         * {
             margin: 0;
             padding: 0;
@@ -41,7 +41,7 @@
             font-size: 8rem;
             color: #c9a77c;
             margin-bottom: 15px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
         }
         
         .boy-text {
@@ -206,13 +206,13 @@
             border-radius: 10px;
             padding: 10px;
             width: 80px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
         
         .countdown-box:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
         }
         
         .countdown-value {
@@ -236,7 +236,7 @@
             border-radius: 50px;
             cursor: pointer;
             outline: none;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
             opacity: 0;
             animation: fadeIn 1s forwards 3s;
@@ -244,12 +244,12 @@
         
         .reveal-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
         }
         
         .reveal-button:active {
             transform: translateY(0);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         
         .audio-control {
@@ -264,7 +264,7 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             z-index: 100;
             opacity: 0;
             animation: fadeIn 1s forwards 3.5s;
@@ -276,7 +276,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.8);
+            background-color: rgba(0, 0, 0, 0.8);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -321,15 +321,15 @@
             align-items: center;
             overflow: hidden;
         }
-        
         /* Welcome modal */
+        
         .welcome-modal {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.85);
+            background-color: rgba(0, 0, 0, 0.85);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -346,14 +346,14 @@
             border-radius: 20px;
             padding: 40px 30px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             border: 1px solid rgba(201, 167, 124, 0.3);
             animation: welcomePulse 2s infinite alternate;
         }
         
         @keyframes welcomePulse {
             0% {
-                box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             }
             100% {
                 box-shadow: 0 15px 40px rgba(201, 167, 124, 0.5);
@@ -365,7 +365,7 @@
             font-size: 3.5rem;
             color: #c9a77c;
             margin-bottom: 20px;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
         }
         
         .welcome-message {
@@ -384,14 +384,14 @@
             border-radius: 50px;
             cursor: pointer;
             outline: none;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
             margin-top: 10px;
         }
         
         .welcome-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
         }
         
         .welcome-button:active {
@@ -411,8 +411,8 @@
         .welcome-close:hover {
             transform: rotate(90deg);
         }
-        
         /* Animations */
+        
         @keyframes fadeIn {
             to {
                 opacity: 1;
@@ -435,8 +435,8 @@
                 transform: translateY(-10px) rotate(-12deg);
             }
         }
-        
         /* Add notification for autoplay restrictions */
+        
         .notification {
             position: fixed;
             bottom: 80px;
@@ -444,7 +444,7 @@
             background: rgba(255, 255, 255, 0.9);
             padding: 10px 15px;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             font-size: 0.8rem;
             display: none;
             z-index: 100;
@@ -483,73 +483,68 @@
             h1 {
                 font-size: 6rem;
             }
-            
             .subtitle {
                 font-size: 1rem;
             }
-            
             .highlight {
                 font-size: 1.5rem;
             }
-            
             .date-number {
                 font-size: 3rem;
             }
-            
             .animals {
                 width: 80px;
             }
-            
             .rabbit {
                 top: 20px;
                 left: 20px;
             }
-            
             .bear {
                 bottom: 20px;
                 right: 20px;
             }
-            
             .countdown-box {
                 width: 60px;
             }
-            
             .countdown-value {
                 font-size: 1.5rem;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
             <h1><span class="girl-text">Girl</span> or <span class="boy-text">Boy</span></h1>
         </div>
-        
+
         <div class="subtitle">
-            Pronto abra una nueva sonrisa iluminando nuestras vidas.
-            Deseamos compartir junto a ti
-            <span class="highlight">la revelación de sexo</span>
-            de nuestro amado bebé.
+            Pronto abra una nueva sonrisa iluminando nuestras vidas. Deseamos compartir junto a ti
+            <span class="highlight">la revelación de sexo</span> de nuestro amado bebé.
         </div>
-        
+
         <div class="date-container">
             <div class="date">
                 <div>
-                    <div class="date-text">MARTES</div>
+                    <!--<div class="date-text">MARTES</div>-->
+                    <div class="date-text">Sábado</div>
                 </div>
-                <div class="date-number">13</div>
+                <!--<div class="date-number">14</div>-->
+                <div class="date-number">30</div>
                 <div>
                     <div class="date-text">A LAS 16:00</div>
-                    <div class="date-text">MAYO</div>
+                    <!--<div class="date-text">MAYO</div>-->
+                    <div class="date-text">AGOSTO</div>
                 </div>
             </div>
         </div>
-        
+
         <div class="location">
-            Calle Maché 509
+            <!--Calle Maché 509-->
+            Santa Rosa (Dirección)
         </div>
-        
+
         <div class="countdown">
             <div class="countdown-title">Faltan:</div>
             <div class="countdown-timer">
@@ -571,17 +566,17 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="message">¡Te esperamos!</div>
-        
+
         <button class="reveal-button" id="revealButton">¿Quieres una pista?</button>
-        
+
         <img src="./lindo_conejo_sinfondo.png" alt="Conejo" class="animals rabbit">
         <img src="./barco_papel_sinfondo.png" alt="Osito" class="animals bear">
     </div>
-    
+
     <div class="hearts-container" id="heartsContainer"></div>
-    
+
     <div class="audio-control" id="audioControl">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="audio-icon">
             <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" stroke="#5a4a42"></polygon>
@@ -589,11 +584,11 @@
             <path d="M19.07 4.93a10 10 0 0 1 0 14.14" stroke="#5a4a42"></path>
         </svg>
     </div>
-    
+
     <div class="notification" id="audioNotification">
         Haz clic en cualquier parte para activar la música
     </div>
-    
+
     <div class="modal" id="revealModal">
         <div class="modal-content">
             <span class="close-modal" id="closeModal">&times;</span>
@@ -603,7 +598,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Welcome modal -->
     <div class="welcome-modal" id="welcomeModal">
         <div class="welcome-content">
@@ -613,16 +608,16 @@
             <button class="welcome-button" id="startButton">Abrir Invitación</button>
         </div>
     </div>
-    
+
     <audio id="bgMusic" loop>
         <source src="./justin-cortado.mp3" type="audio/mpeg">
     </audio>
-    
+
     <script>
         // Hearts animation
         const heartsContainer = document.getElementById('heartsContainer');
         const colors = ['#e9a7b9', '#82a8d2', '#c9a77c', '#a67b7b'];
-        
+
         function createHeart() {
             const heart = document.createElement('div');
             heart.classList.add('heart');
@@ -633,31 +628,32 @@
             heart.style.color = colors[Math.floor(Math.random() * colors.length)];
             heart.style.animationDelay = Math.random() * 5 + 's';
             heartsContainer.appendChild(heart);
-            
+
             setTimeout(() => {
                 heart.remove();
             }, 15000);
         }
-        
+
         setInterval(createHeart, 800);
-        
+
         // Countdown timer
-        const countdownDate = new Date("May 13, 2025 16:00:00").getTime();
-        
+        //const countdownDate = new Date("May 14, 2025 16:00:00").getTime();
+        const countdownDate = new Date("August 28, 2025 16:00:00").getTime();
+
         function updateCountdown() {
             const now = new Date().getTime();
             const distance = countdownDate - now;
-            
+
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
+
             document.getElementById("days").textContent = String(days).padStart(2, '0');
             document.getElementById("hours").textContent = String(hours).padStart(2, '0');
             document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
             document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
-            
+
             if (distance < 0) {
                 clearInterval(countdownTimer);
                 document.getElementById("days").textContent = "00";
@@ -666,15 +662,15 @@
                 document.getElementById("seconds").textContent = "00";
             }
         }
-        
+
         updateCountdown();
         const countdownTimer = setInterval(updateCountdown, 1000);
-        
+
         // Audio control
         const audioControl = document.getElementById('audioControl');
         const bgMusic = document.getElementById('bgMusic');
         let isPlaying = false;
-        
+
         // Auto play music when page loads
         window.addEventListener('DOMContentLoaded', function() {
             // Small delay to ensure everything is loaded
@@ -690,11 +686,11 @@
                 }).catch(err => {
                     // Handle autoplay policy issues gracefully
                     console.log('Autoplay blocked by browser policy. User must interact with the page first.');
-                    
+
                     // Show notification about interaction needed
                     const notification = document.getElementById('audioNotification');
                     notification.style.display = 'block';
-                    
+
                     // Add click event to entire document to play music
                     document.body.addEventListener('click', function bodyClick() {
                         bgMusic.play().then(() => {
@@ -706,7 +702,7 @@
                                 </svg>
                             `;
                             notification.style.display = 'none';
-                            
+
                             // Remove the click event after first interaction
                             document.body.removeEventListener('click', bodyClick);
                         });
@@ -714,7 +710,7 @@
                 });
             }, 1000);
         });
-        
+
         audioControl.addEventListener('click', function() {
             if (isPlaying) {
                 bgMusic.pause();
@@ -738,65 +734,65 @@
         });
 
         // Welcome modal 
-            const welcomeModal = document.getElementById('welcomeModal');
-            const closeWelcome = document.getElementById('closeWelcome');
-            const startButton = document.getElementById('startButton');
-            const modalContent = document.querySelector('.welcome-content');
+        const welcomeModal = document.getElementById('welcomeModal');
+        const closeWelcome = document.getElementById('closeWelcome');
+        const startButton = document.getElementById('startButton');
+        const modalContent = document.querySelector('.welcome-content');
 
-            // Función para cerrar el modal con animación
-            function closeModalWelcome() {
-                modalContent.style.transform = 'scale(0.7)';
-                
-                setTimeout(() => {
-                    welcomeModal.style.opacity = '0';
-                    welcomeModal.style.visibility = 'hidden';
-                }, 300);
+        // Función para cerrar el modal con animación
+        function closeModalWelcome() {
+            modalContent.style.transform = 'scale(0.7)';
+
+            setTimeout(() => {
+                welcomeModal.style.opacity = '0';
+                welcomeModal.style.visibility = 'hidden';
+            }, 300);
+        }
+
+        // Cerrar modal con el botón X
+        closeWelcome.addEventListener('click', closeModalWelcome);
+
+        // Cerrar modal con el botón "Abrir Invitación"
+        startButton.addEventListener('click', closeModalWelcome);
+
+        // Cerrar modal al hacer clic fuera del contenido
+        welcomeModal.addEventListener('click', function(event) {
+            if (event.target === welcomeModal) {
+                closeModalWelcome();
             }
-            
-            // Cerrar modal con el botón X
-            closeWelcome.addEventListener('click', closeModalWelcome);
-            
-            // Cerrar modal con el botón "Abrir Invitación"
-            startButton.addEventListener('click', closeModalWelcome);
-            
-            // Cerrar modal al hacer clic fuera del contenido
-            welcomeModal.addEventListener('click', function(event) {
-                if (event.target === welcomeModal) {
-                    closeModalWelcome();
-                }
-            });
-        
+        });
+
         // Reveal modal
         const revealButton = document.getElementById('revealButton');
         const revealModal = document.getElementById('revealModal');
         const closeModal = document.getElementById('closeModal');
         const revealAnimation = document.getElementById('revealAnimation');
         const revealImage = document.getElementById('revealImage');
-        
+
         revealButton.addEventListener('click', function() {
             revealModal.style.opacity = '1';
             revealModal.style.visibility = 'visible';
-            
+
             setTimeout(() => {
                 document.querySelector('.modal-content').style.transform = 'scale(1)';
             }, 100);
-            
+
             // Create confetti animation for the reveal
             createConfetti();
         });
-        
+
         closeModal.addEventListener('click', function() {
             document.querySelector('.modal-content').style.transform = 'scale(0.7)';
-            
+
             setTimeout(() => {
                 revealModal.style.opacity = '0';
                 revealModal.style.visibility = 'hidden';
             }, 300);
         });
-        
+
         function createConfetti() {
             const confettiColors = ['#e9a7b9', '#82a8d2', '#c9a77c', '#FFD700'];
-            
+
             for (let i = 0; i < 100; i++) {
                 setTimeout(() => {
                     const confetti = document.createElement('div');
@@ -807,9 +803,9 @@
                     confetti.style.height = Math.random() * 10 + 5 + 'px';
                     confetti.style.opacity = Math.random() * 0.5 + 0.5;
                     confetti.style.animationDuration = Math.random() * 2 + 2 + 's';
-                    
+
                     revealAnimation.appendChild(confetti);
-                    
+
                     setTimeout(() => {
                         confetti.remove();
                     }, 4000);
@@ -826,7 +822,7 @@
                 <path d="M9 12c1 1 5 1 6 0" stroke="#432" fill="none" stroke-width="0.5"/>
             </svg>
         `;
-        
+
         document.querySelector('.rabbit').innerHTML = `
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
                 <ellipse cx="60" cy="80" rx="40" ry="30" fill="#f0f0f0" stroke="#d0d0d0" stroke-width="2"/>
@@ -839,7 +835,7 @@
                 <path d="M55 80 C 58 85, 62 85, 65 80" fill="none" stroke="#333" stroke-width="1"/>
             </svg>
         `;
-        
+
         document.querySelector('.bear').innerHTML = `
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
                 <circle cx="60" cy="60" r="40" fill="#f0f0f0" stroke="#d0d0d0" stroke-width="2"/>
@@ -851,18 +847,18 @@
                 <path d="M55 80 C 58 85, 62 85, 65 80" fill="none" stroke="#333" stroke-width="1"/>
             </svg>
         `;
-        
+
         // Show animals with fade-in animation
         setTimeout(() => {
             document.querySelector('.rabbit').style.opacity = '0.7';
             document.querySelector('.rabbit').style.transform = 'rotate(-15deg) translateY(0)';
         }, 2000);
-        
+
         setTimeout(() => {
             document.querySelector('.bear').style.opacity = '0.7';
             document.querySelector('.bear').style.transform = 'rotate(10deg) translateY(0)';
         }, 2500);
-        
+
         // Set the reveal image
         revealImage.outerHTML = `
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
@@ -877,9 +873,11 @@
                     <path d="M45 75 L 25 65 M 105 75 L 125 65" fill="none" stroke="#5a4a42" stroke-width="2"/>
                 </g>
                 <path d="M50,220 Q 150,280 250,220" fill="none" stroke="#c9a77c" stroke-width="3"/>
-                <text x="150" y="270" text-anchor="middle" font-family="'Dancing Script', cursive" font-size="24" fill="#a67b7b">13 de Mayo</text>
-            </svg>
+                <!--<text x="150" y="270" text-anchor="middle" font-family="'Dancing Script', cursive" font-size="24" fill="#a67b7b">14 de Mayo</text>-->
+                <text x="150" y="270" text-anchor="middle" font-family="'Dancing Script', cursive" font-size="24" fill="#a67b7b">28 de Agosto</text>
+                </svg>
         `;
     </script>
 </body>
+
 </html>
